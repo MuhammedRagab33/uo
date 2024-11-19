@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>قراءة الأرقام باستخدام الكاميرا</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>قراءة الأرقام باستخدام الكاميرا</h1>
+        <div id="camera-container">
+            <video id="video" width="100%" height="auto" autoplay></video>
+        </div>
+
+        <!-- مؤشر التحميل -->
+        <div id="loading-indicator" style="display: none;">جاري المعالجة...</div>
+
+        <div class="output">
+            <h2>الأرقام المستخلصة:</h2>
+            <ul id="numbers-list">
+                <!-- سيتم عرض الأرقام هنا -->
+            </ul>
+            <!-- أزرار التحكم -->
+            <button id="copy-button">نسخ الأرقام</button>
+            <button id="save-button">حفظ الأرقام</button>
+        </div>
+
+        <!-- إضافة رابط للمساعدة أو الموقع الرسمي -->
+        <footer>
+            <p>بناء بواسطة <a href="https://www.example.com" target="_blank">فريق البرمجة</a></p>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/tesseract.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

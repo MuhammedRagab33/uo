@@ -1,0 +1,175 @@
+/* style.css */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #e3f2fd; /* خلفية بلون أزرق فاتح */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+.container {
+    padding: 30px;
+    background-color: #ffffff; /* خلفية بيضاء */
+    border-radius: 15px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1); /* تأثير الظل */
+    width: 80%;
+    max-width: 500px;
+    text-align: center;
+    border: 2px solid #90caf9; /* إطار أزرق فاتح */
+}
+
+h1 {
+    color: #1976d2; /* لون أزرق غامق للنص */
+    font-size: 28px;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+video {
+    width: 100%;
+    height: auto;
+    border: 1px solid #90caf9; /* حدود الفيديو باللون الأزرق الفاتح */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* تأثير الظل على الفيديو */
+    margin-bottom: 20px;
+}/* التهيئة العامة */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #f32f11, #e14d08); /* تدرج لوني بين الأخضر والأزرق الفاتح */
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* تنسيق الحاوية الرئيسية */
+.container {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 90%;
+    max-width: 500px;
+    overflow: hidden;
+}
+
+h1 {
+    color: #00796b; /* اللون الأخضر */
+    font-size: 2rem;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+h2 {
+    color: #0288d1; /* اللون الأزرق الفاتح */
+    font-size: 1.5rem;
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+/* تنسيق الفيديو */
+#camera-container {
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+video {
+    width: 100%;
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* تأثير تكبير الفيديو عند التحويم */
+#video:hover {
+    transform: scale(1.05);
+}
+
+/* تنسيق النصوص المستخلصة */
+.output {
+    margin-top: 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    font-size: 18px;
+    color: #00796b;
+    margin: 10px 0;
+    background-color: #e0f2f1; /* خلفية خفيفة للأرقام */
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+}
+
+/* تأثير عند التحويم على الأرقام */
+li:hover {
+    transform: scale(1.05);
+    background-color: #b2dfdb; /* تدرج خفيف عند التحويم */
+}
+
+/* تنسيق أزرار التحكم */
+button {
+    background-color: #0288d1;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0277bd; /* تدرج اللون عند التحويم */
+}
+
+/* إضافة بعض التأثيرات التفاعلية */
+button:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(0, 151, 167, 0.5);
+}
+
+/* شريط التحميل */
+#loading-indicator {
+    color: #0288d1;
+    font-size: 1.2rem;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+/* إضافة بعض التأثيرات التفاعلية */
+footer {
+    margin-top: 30px;
+    font-size: 0.9rem;
+    color: #0288d1;
+}
+
+footer a {
+    color: #0288d1;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
